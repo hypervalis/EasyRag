@@ -19,7 +19,7 @@ class AbstractDownloader(ABC):
 
     def run(self, query: str) -> List[str]:
         """High-level entry point."""
-        print(fSearching for: {query}")
+        print(f"Searching for: {query}")
         ids = self.search(query)
         print(f"{len(ids)} results")
 
